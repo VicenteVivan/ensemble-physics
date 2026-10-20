@@ -1,0 +1,154 @@
+{
+  "canvas_points": [
+    1533,
+    878
+  ],
+  "divider_x": 808,
+  "divider_top_bottom": [
+    10,
+    873.34
+  ],
+  "divider_color": "#b7b7b7",
+  "divider_width": 1.5,
+  "forest_rect_points": [
+    912,
+    185,
+    580,
+    500
+  ],
+  "accuracy_rects_points": [
+    [
+      136,
+      61,
+      309,
+      309
+    ],
+    [
+      468,
+      61,
+      309,
+      309
+    ],
+    [
+      136,
+      473,
+      311,
+      311
+    ],
+    [
+      468,
+      473,
+      311,
+      311
+    ]
+  ],
+  "forest_title_anchor_points": [
+    1186.25,
+    131
+  ],
+  "forest_y_label_anchor_points": [
+    848,
+    435
+  ],
+  "panel_label_anchors_points": [
+    [
+      29.269999999999982,
+      17
+    ],
+    [
+      827.55,
+      17
+    ]
+  ],
+  "text_font": "Lato",
+  "math_fontset": "cm",
+  "text_color": "#434343",
+  "math_color": "#333333",
+  "tick_color": "#000000",
+  "sizes_points": {
+    "panel": 38,
+    "correlation": 26,
+    "forest_title": 25,
+    "forest_axis": 25,
+    "forest_symbol": 39,
+    "legend": 25,
+    "forest_tick": 17,
+    "accuracy_title": 22,
+    "accuracy_axis": 22,
+    "accuracy_tick": 14
+  },
+  "forest_title": "Individual Subject Ensemble Advantage Estimates",
+  "forest_symbol_slot_points": 31.073,
+  "forest": {
+    "color": "#5296d7",
+    "interval_alpha": 0.5,
+    "interval_width": 3.3,
+    "marker_area": 100,
+    "marker_edge_width": 1.65,
+    "spine_color": "#cccccc",
+    "spine_width": 1.6,
+    "grid_color": "#808080",
+    "grid_alpha": 0.3,
+    "zero_color": "#95a5a6",
+    "zero_width": 2.5,
+    "ylim": [
+      -0.3,
+      0.79
+    ],
+    "yticks": [
+      -0.2,
+      0,
+      0.2,
+      0.4,
+      0.6
+    ]
+  },
+  "accuracy": {
+    "marker_area": 36,
+    "marker_alpha": 0.7,
+    "marker_edge_width": 0.55,
+    "spine_width": 0.7,
+    "grid_width": 0.5,
+    "grid_alpha": 0.3,
+    "grid_color": "#b0b0b0",
+    "identity_color": "#666666",
+    "identity_width": 1.8,
+    "ticks": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "ticklabels": [
+      "0",
+      "0.25",
+      "0.5",
+      "0.75",
+      "1.0"
+    ],
+    "spine_color": "#737373"
+  },
+  "tasks": [
+    {
+      "key": "CL",
+      "title": "S1: Change Localization",
+      "color": "#4ECDC4"
+    },
+    {
+      "key": "MD",
+      "title": "S1: Mass Discrimination",
+      "color": "#FF6B6B"
+    },
+    {
+      "key": "changed",
+      "title": "S2: Change Detection",
+      "color": "#96CEB4"
+    },
+    {
+      "key": "same",
+      "title": "S2: No-Change Detection",
+      "color": "#45B7D1"
+    }
+  ]
+}

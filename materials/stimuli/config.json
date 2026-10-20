@@ -1,0 +1,65 @@
+{
+  "render": {
+    "render_node": "/out/mantra_ipr",
+    "frame_range": [25, 75],
+    "fps": 24
+  },
+  "scenes": {
+    "single": {
+      "path": "scenes/FB_Single.hipnc",
+      "parameter_bridge": "objects_single"
+    },
+    "ensemble": {
+      "path": "scenes/FB_Multi.hipnc",
+      "parameter_bridge": "objects"
+    }
+  },
+  "datasets": {
+    "experiment1-single": {
+      "scene": "single",
+      "parameters": "parameters/experiment1/single",
+      "videos": "../experiments/experiment1/static/videos_single",
+      "expected_trials": 441
+    },
+    "experiment1-ensemble": {
+      "scene": "ensemble",
+      "parameters": "parameters/experiment1/ensemble",
+      "videos": "../experiments/experiment1/static/videos_multi",
+      "expected_trials": 78
+    },
+    "experiment2-normal": {
+      "scene": "ensemble",
+      "parameters": "parameters/experiment2/normal",
+      "videos": "../experiments/experiment2/static/videos_multi/normal",
+      "expected_trials": 78
+    },
+    "experiment2-heavier": {
+      "scene": "ensemble",
+      "parameters": "parameters/experiment2/heavier",
+      "videos": "../experiments/experiment2/static/videos_multi/heavier",
+      "expected_trials": 78
+    },
+    "experiment2-lighter": {
+      "scene": "ensemble",
+      "parameters": "parameters/experiment2/lighter",
+      "videos": "../experiments/experiment2/static/videos_multi/lighter",
+      "expected_trials": 78
+    },
+    "experiment2-catch": {
+      "scene": "ensemble",
+      "parameters": "parameters/experiment2/catch",
+      "videos": "../experiments/experiment2/static/videos_multi/catch",
+      "expected_trials": 2
+    }
+  },
+  "assets": {
+    "kiara_1_dawn_4k.hdr": "assets/background/kiara_1_dawn_4k.hdr",
+    "Wallpaper_ArtDeco_002_basecolor.jpg": "assets/materials/art_deco/Wallpaper_ArtDeco_002_basecolor.jpg",
+    "Wallpaper_ArtDeco_002_height.jpg": "assets/materials/art_deco/Wallpaper_ArtDeco_002_height.jpg",
+    "Wallpaper_ArtDeco_002_normal.jpg": "assets/materials/art_deco/Wallpaper_ArtDeco_002_normal.jpg",
+    "Wallpaper_ArtDeco_002_roughness.jpg": "assets/materials/art_deco/Wallpaper_ArtDeco_002_roughness.jpg",
+    "bs3.png": "assets/materials/nylon/bs3.png",
+    "Fabric_Nylon_002_normal.jpg": "assets/materials/nylon/Fabric_Nylon_002_normal.jpg",
+    "Fabric_Nylon_002_roughness.jpg": "assets/materials/nylon/Fabric_Nylon_002_roughness.jpg"
+  }
+}

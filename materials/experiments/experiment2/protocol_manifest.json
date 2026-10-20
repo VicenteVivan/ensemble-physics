@@ -1,0 +1,43 @@
+{
+  "name": "things-vs-stuff-experiment-2-combined",
+  "classification": "adapted",
+  "canonical_source_commit": "01e1f9de6faaba0edb07f287df975cc541313162",
+  "section_order": ["ensemble-and-localization", "highlighted-individual"],
+  "sections": {
+    "ensemble-and-localization": {
+      "normal_trials": 55,
+      "catch_trials": 5,
+      "total_trials": 60,
+      "responses": ["Lighter", "Heavier"],
+      "secondary_task": "select one changed 5x5 grid cell",
+      "points_per_trial": 2
+    },
+    "highlighted-individual": {
+      "normal_trials": 60,
+      "catch_trials": 0,
+      "total_trials": 60,
+      "responses": ["Lighter", "Same", "Heavier"],
+      "highlight_sampling": "changed with probability 0.5, otherwise unchanged",
+      "points_per_trial": 1
+    }
+  },
+  "pair_sampling": [
+    "sample heavier or lighter with equal probability",
+    "sample one available mass folder uniformly",
+    "sample one available clip in that folder uniformly",
+    "sample presentation order uniformly"
+  ],
+  "stimulus_root": "static/videos_multi",
+  "parameter_root": "static/params_multi",
+  "tutorial_media": [
+    "static/tutorial/videos/tutorial.mp4",
+    "static/tutorial/videos/tutorial_exp2.mp4"
+  ],
+  "expected_runtime_inventory": {
+    "normal": 78,
+    "heavier": 78,
+    "lighter": 78,
+    "catch": 2,
+    "total": 236
+  }
+}

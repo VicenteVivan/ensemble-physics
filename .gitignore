@@ -1,0 +1,21 @@
+# Fits and videos are included in the complete release download.
+*.nc
+*.mp4
+
+.release/
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv*/
+venv/
+.env
+.env.*
+!.env.example
+*.jsonl
+log.db
+generated/
+results/*/reproduced/
+results/*/refit-*/
+results/*/glmm-*/
+materials/experiments/*/results/

@@ -1,0 +1,528 @@
+{
+  "seed": 42,
+  "method": "Maximum likelihood GLMM, binomial-logit, Laplace approximation (nAGQ=1)",
+  "R_version": "R version 4.6.1 (2026-06-24)",
+  "platform": "aarch64-apple-darwin27.0.0",
+  "packages": {
+    "lme4": "2.0.6",
+    "Matrix": "1.7.5",
+    "jsonlite": "2.0.0"
+  },
+  "fitting_settings": {
+    "nAGQ": 1,
+    "initial_optimizer": "bobyqa",
+    "maxfun": 200000,
+    "full_and_null_checks": "allFit, cold starts, 4 workers; maximum likelihood candidate, then tight bobyqa restart",
+    "restart_rhoend": 1.0000000000000001e-09,
+    "thread_limits": ["1", "1", "1"]
+  },
+  "diagnostics": {
+    "full": {
+      "formula": "Response ~ Type * LMass + (Type * LMass | Subject)",
+      "seconds": 38.339999999999996,
+      "warnings": [],
+      "initial_bobyqa": {
+        "log_likelihood": -5811.3459078789901,
+        "singular": true,
+        "coefficients": {
+          "(Intercept)": 0.0070891956713177414,
+          "Typesingle": 0.053764025870937884,
+          "LMass": 2.6624762730719014,
+          "Typesingle:LMass": -0.50772865754605945
+        },
+        "convergence": {
+          "opt": 0,
+          "lme4": {
+            "messages": "boundary (singular) fit: see help('isSingular')"
+          }
+        }
+      },
+      "optimizer_checks": {
+        "bobyqa": {
+          "log_likelihood": -5811.3459078789901,
+          "singular": true,
+          "coefficients": {
+            "(Intercept)": 0.0070891956713177414,
+            "Typesingle": 0.053764025870937884,
+            "LMass": 2.6624762730719014,
+            "Typesingle:LMass": -0.50772865754605945
+          },
+          "convergence": {
+            "opt": 0,
+            "lme4": {
+              "messages": "boundary (singular) fit: see help('isSingular')"
+            }
+          }
+        },
+        "Nelder_Mead": {
+          "log_likelihood": -5806.8433355496854,
+          "singular": false,
+          "coefficients": {
+            "(Intercept)": -0.0068420310411694985,
+            "Typesingle": 0.067455599105531894,
+            "LMass": 2.7142932432015225,
+            "Typesingle:LMass": -0.56015205082838493
+          },
+          "convergence": {
+            "opt": 0,
+            "lme4": null
+          }
+        },
+        "nlminbwrap": {
+          "log_likelihood": -5811.345908056287,
+          "singular": true,
+          "coefficients": {
+            "(Intercept)": 0.0070849058235971539,
+            "Typesingle": 0.053756621840522295,
+            "LMass": 2.6624110257583302,
+            "Typesingle:LMass": -0.50768254075717267
+          },
+          "convergence": {
+            "opt": 0,
+            "lme4": {
+              "messages": "boundary (singular) fit: see help('isSingular')"
+            }
+          }
+        },
+        "nloptwrap.NLOPT_LN_NELDERMEAD": {
+          "log_likelihood": -5806.8438529273826,
+          "singular": false,
+          "coefficients": {
+            "(Intercept)": -0.0077810963337635996,
+            "Typesingle": 0.068626766839567283,
+            "LMass": 2.7157555074815614,
+            "Typesingle:LMass": -0.56250922867297071
+          },
+          "convergence": {
+            "opt": 0,
+            "lme4": null
+          }
+        },
+        "nloptwrap.NLOPT_LN_BOBYQA": {
+          "log_likelihood": -5811.3459493075979,
+          "singular": true,
+          "coefficients": {
+            "(Intercept)": 0.0073751878545152737,
+            "Typesingle": 0.053530084249768031,
+            "LMass": 2.6625494568947281,
+            "Typesingle:LMass": -0.50777423773795094
+          },
+          "convergence": {
+            "opt": 0,
+            "lme4": {
+              "messages": "boundary (singular) fit: see help('isSingular')"
+            }
+          }
+        }
+      },
+      "optimizer_code": 0,
+      "convergence_messages": null,
+      "singular": false,
+      "max_abs_scaled_gradient": 8.9534306957281398e-05,
+      "hessian_min_eigenvalue": 16.783507980985085,
+      "log_likelihood": -5806.8426916695953,
+      "AIC": 11641.685383339191,
+      "BIC": 11744.464544220547,
+      "random_effects": [
+        {
+          "grp": "Subject",
+          "var1": "(Intercept)",
+          "vcov": 0.042310950549181006,
+          "sdcor": 0.20569625798536298
+        },
+        {
+          "grp": "Subject",
+          "var1": "Typesingle",
+          "vcov": 0.11183515308046416,
+          "sdcor": 0.3344176327295918
+        },
+        {
+          "grp": "Subject",
+          "var1": "LMass",
+          "vcov": 1.4160575711198977,
+          "sdcor": 1.1899821726059168
+        },
+        {
+          "grp": "Subject",
+          "var1": "Typesingle:LMass",
+          "vcov": 0.28737680220882394,
+          "sdcor": 0.53607536989571158
+        },
+        {
+          "grp": "Subject",
+          "var1": "(Intercept)",
+          "var2": "Typesingle",
+          "vcov": -0.031739903684222824,
+          "sdcor": -0.46141323251360122
+        },
+        {
+          "grp": "Subject",
+          "var1": "(Intercept)",
+          "var2": "LMass",
+          "vcov": -0.092776315399312387,
+          "sdcor": -0.37902711017177187
+        },
+        {
+          "grp": "Subject",
+          "var1": "(Intercept)",
+          "var2": "Typesingle:LMass",
+          "vcov": 0.036046820812700962,
+          "sdcor": 0.32689985101797703
+        },
+        {
+          "grp": "Subject",
+          "var1": "Typesingle",
+          "var2": "LMass",
+          "vcov": 0.22677283675689733,
+          "sdcor": 0.56985112414008976
+        },
+        {
+          "grp": "Subject",
+          "var1": "Typesingle",
+          "var2": "Typesingle:LMass",
+          "vcov": -0.10447452648775982,
+          "sdcor": -0.58276758773782211
+        },
+        {
+          "grp": "Subject",
+          "var1": "LMass",
+          "var2": "Typesingle:LMass",
+          "vcov": -0.45039509346700274,
+          "sdcor": -0.70603680605356012
+        }
+      ]
+    },
+    "base": {
+      "formula": "Response ~ LMass + (LMass | Subject)",
+      "seconds": 0.95400000000000063,
+      "warnings": [],
+      "initial_bobyqa": {
+        "log_likelihood": -5836.4684501465517,
+        "singular": false,
+        "coefficients": {
+          "(Intercept)": 0.034515460251352888,
+          "LMass": 2.333848131872418
+        },
+        "convergence": {
+          "opt": 0,
+          "lme4": null
+        }
+      },
+      "optimizer_checks": null,
+      "optimizer_code": 0,
+      "convergence_messages": null,
+      "singular": false,
+      "max_abs_scaled_gradient": 9.1311299719749579e-06,
+      "hessian_min_eigenvalue": 71.294911985672542,
+      "log_likelihood": -5836.4684501465517,
+      "AIC": 11682.936900293103,
+      "BIC": 11719.643743465016,
+      "random_effects": [
+        {
+          "grp": "Subject",
+          "var1": "(Intercept)",
+          "vcov": 0.03764478806417533,
+          "sdcor": 0.19402264832790869
+        },
+        {
+          "grp": "Subject",
+          "var1": "LMass",
+          "vcov": 0.9702964109168325,
+          "sdcor": 0.98503624852937899
+        },
+        {
+          "grp": "Subject",
+          "var1": "(Intercept)",
+          "var2": "LMass",
+          "vcov": 0.012674788457313086,
+          "sdcor": 0.066318711380226547
+        }
+      ]
+    },
+    "fixedint": {
+      "formula": "Response ~ 0 + Type:LMass + (0 + Type:LMass | Subject)",
+      "seconds": 0.57699999999999818,
+      "warnings": [],
+      "initial_bobyqa": {
+        "log_likelihood": -5825.5190691287835,
+        "singular": false,
+        "coefficients": {
+          "Typemulti:LMass": 2.6619712315914237,
+          "Typesingle:LMass": 2.0646382393542222
+        },
+        "convergence": {
+          "opt": 0,
+          "lme4": null
+        }
+      },
+      "optimizer_checks": null,
+      "optimizer_code": 0,
+      "convergence_messages": null,
+      "singular": false,
+      "max_abs_scaled_gradient": 1.1431153511741519e-05,
+      "hessian_min_eigenvalue": 65.340434816119313,
+      "log_likelihood": -5825.5190691287835,
+      "AIC": 11661.038138257567,
+      "BIC": 11697.74498142948,
+      "random_effects": [
+        {
+          "grp": "Subject",
+          "var1": "Typemulti:LMass",
+          "vcov": 1.4052683789821376,
+          "sdcor": 1.1854401625481303
+        },
+        {
+          "grp": "Subject",
+          "var1": "Typesingle:LMass",
+          "vcov": 0.8168762152208634,
+          "sdcor": 0.90381204640171919
+        },
+        {
+          "grp": "Subject",
+          "var1": "Typemulti:LMass",
+          "var2": "Typesingle:LMass",
+          "vcov": 0.97656137489069361,
+          "sdcor": 0.91146874411271994
+        }
+      ]
+    },
+    "no_interaction": {
+      "formula": "Response ~ Type + LMass + (Type * LMass | Subject)",
+      "seconds": 52.414999999999992,
+      "warnings": [],
+      "initial_bobyqa": {
+        "log_likelihood": -5817.697502254443,
+        "singular": false,
+        "coefficients": {
+          "(Intercept)": 0.0044209014103099237,
+          "Typesingle": 0.037217588900346571,
+          "LMass": 2.3986754478293464
+        },
+        "convergence": {
+          "opt": 0,
+          "lme4": null
+        }
+      },
+      "optimizer_checks": {
+        "bobyqa": {
+          "log_likelihood": -5817.697502254443,
+          "singular": false,
+          "coefficients": {
+            "(Intercept)": 0.0044209014103099237,
+            "Typesingle": 0.037217588900346571,
+            "LMass": 2.3986754478293464
+          },
+          "convergence": {
+            "opt": 0,
+            "lme4": null
+          }
+        },
+        "Nelder_Mead": {
+          "log_likelihood": -5818.6218081407487,
+          "singular": false,
+          "coefficients": {
+            "(Intercept)": 0.0023322292973251679,
+            "Typesingle": 0.064881488931493453,
+            "LMass": 2.4541655186085944
+          },
+          "convergence": {
+            "opt": 0,
+            "lme4": null
+          }
+        },
+        "nlminbwrap": {
+          "log_likelihood": -5820.6858460280873,
+          "singular": true,
+          "coefficients": {
+            "(Intercept)": 0.0089903554926434332,
+            "Typesingle": 0.034435517135313745,
+            "LMass": 2.3834346301029314
+          },
+          "convergence": {
+            "opt": 0,
+            "lme4": {
+              "messages": "boundary (singular) fit: see help('isSingular')"
+            }
+          }
+        },
+        "nloptwrap.NLOPT_LN_NELDERMEAD": {
+          "log_likelihood": -5817.7004613720201,
+          "singular": false,
+          "coefficients": {
+            "(Intercept)": 0.0044728240958523272,
+            "Typesingle": 0.037147165007114569,
+            "LMass": 2.398628258382927
+          },
+          "convergence": {
+            "opt": 0,
+            "lme4": null
+          }
+        },
+        "nloptwrap.NLOPT_LN_BOBYQA": {
+          "log_likelihood": -5820.685850661881,
+          "singular": true,
+          "coefficients": {
+            "(Intercept)": 0.009063563435746361,
+            "Typesingle": 0.034299258015213392,
+            "LMass": 2.3833906653952361
+          },
+          "convergence": {
+            "opt": 0,
+            "lme4": {
+              "messages": "boundary (singular) fit: see help('isSingular')"
+            }
+          }
+        }
+      },
+      "optimizer_code": 0,
+      "convergence_messages": null,
+      "singular": false,
+      "max_abs_scaled_gradient": 0.00021054830934944419,
+      "hessian_min_eigenvalue": 8.4492891658831137,
+      "log_likelihood": -5817.697502254443,
+      "AIC": 11661.395004508886,
+      "BIC": 11756.83279675586,
+      "random_effects": [
+        {
+          "grp": "Subject",
+          "var1": "(Intercept)",
+          "vcov": 0.023218629149890001,
+          "sdcor": 0.15237660302648173
+        },
+        {
+          "grp": "Subject",
+          "var1": "Typesingle",
+          "vcov": 0.11760623011564458,
+          "sdcor": 0.34293764756241707
+        },
+        {
+          "grp": "Subject",
+          "var1": "LMass",
+          "vcov": 1.0332313186892208,
+          "sdcor": 1.0164798663471997
+        },
+        {
+          "grp": "Subject",
+          "var1": "Typesingle:LMass",
+          "vcov": 0.29627167322494408,
+          "sdcor": 0.54430843574663079
+        },
+        {
+          "grp": "Subject",
+          "var1": "(Intercept)",
+          "var2": "Typesingle",
+          "vcov": -0.012806922821845677,
+          "sdcor": -0.24508195750048214
+        },
+        {
+          "grp": "Subject",
+          "var1": "(Intercept)",
+          "var2": "LMass",
+          "vcov": -0.074079212963259033,
+          "sdcor": -0.4782767740111683
+        },
+        {
+          "grp": "Subject",
+          "var1": "(Intercept)",
+          "var2": "Typesingle:LMass",
+          "vcov": 0.023420613357822286,
+          "sdcor": 0.28238063592595364
+        },
+        {
+          "grp": "Subject",
+          "var1": "Typesingle",
+          "var2": "LMass",
+          "vcov": 0.20587680754551091,
+          "sdcor": 0.59060005066941201
+        },
+        {
+          "grp": "Subject",
+          "var1": "Typesingle",
+          "var2": "Typesingle:LMass",
+          "vcov": -0.083854776535581349,
+          "sdcor": -0.44922878485875284
+        },
+        {
+          "grp": "Subject",
+          "var1": "LMass",
+          "var2": "Typesingle:LMass",
+          "vcov": -0.15207325532090651,
+          "sdcor": -0.27485838899383175
+        }
+      ]
+    }
+  },
+  "ensemble_sensitivity": 2.7164606624855181,
+  "single_sensitivity": 2.1536509910062014,
+  "ensemble_minus_single_sensitivity": {
+    "estimate": 0.56280967147931649,
+    "se": 0.12435864257891534,
+    "z": 4.5256980922911687,
+    "p_two_sided": 6.01964651201447e-06,
+    "wald_95_CI": [0.31907121085835322, 0.80654813210027976]
+  },
+  "interaction_lrt": [
+    {
+      "npar": 13,
+      "AIC": 11661.395004508886,
+      "BIC": 11756.83279675586,
+      "logLik": -5817.697502254443,
+      "-2*log(L)": 11635.395004508886,
+      "_row": "models$no_interaction"
+    },
+    {
+      "npar": 14,
+      "AIC": 11641.685383339191,
+      "BIC": 11744.464544220547,
+      "logLik": -5806.8426916695953,
+      "-2*log(L)": 11613.685383339191,
+      "Chisq": 21.709621169695311,
+      "Df": 1,
+      "Pr(>Chisq)": 3.1719642882520481e-06,
+      "_row": "models$full"
+    }
+  ],
+  "original_base_v_full": [
+    {
+      "npar": 5,
+      "AIC": 11682.936900293103,
+      "BIC": 11719.643743465016,
+      "logLik": -5836.4684501465517,
+      "-2*log(L)": 11672.936900293103,
+      "_row": "models$base"
+    },
+    {
+      "npar": 14,
+      "AIC": 11641.685383339191,
+      "BIC": 11744.464544220547,
+      "logLik": -5806.8426916695953,
+      "-2*log(L)": 11613.685383339191,
+      "Chisq": 59.251516953912869,
+      "Df": 9,
+      "Pr(>Chisq)": 1.8682904002450701e-09,
+      "_row": "models$full"
+    }
+  ],
+  "original_fixedint_v_full": [
+    {
+      "npar": 5,
+      "AIC": 11661.038138257567,
+      "BIC": 11697.74498142948,
+      "logLik": -5825.5190691287835,
+      "-2*log(L)": 11651.038138257567,
+      "_row": "models$fixedint"
+    },
+    {
+      "npar": 14,
+      "AIC": 11641.685383339191,
+      "BIC": 11744.464544220547,
+      "logLik": -5806.8426916695953,
+      "-2*log(L)": 11613.685383339191,
+      "Chisq": 37.352754918376377,
+      "Df": 9,
+      "Pr(>Chisq)": 2.2764055631435637e-05,
+      "_row": "models$full"
+    }
+  ],
+  "participant_positive_contrasts": 92
+}

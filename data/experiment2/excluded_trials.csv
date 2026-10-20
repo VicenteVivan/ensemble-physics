@@ -1,0 +1,16 @@
+participant_id,section,order,reason
+P040,S1,19,rapid
+P041,S1,21,unresolved_CL
+P042,S1,6,rapid
+P058,S1,44,rapid
+P062,S1,23,rapid
+P062,S1,48,rapid
+P082,S1,19,unresolved_CL
+P107,S1,41,rapid
+P107,S1,44,rapid
+P107,S1,46,rapid
+P107,S1,57,rapid
+P108,S1,45,rapid
+P111,S1,18,rapid
+P112,S1,34,rapid
+P112,S1,37,rapid

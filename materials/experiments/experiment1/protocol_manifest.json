@@ -1,0 +1,39 @@
+{
+  "name": "things-vs-stuff-experiment-1",
+  "classification": "adapted",
+  "canonical_source_commit": "e18952d0eb71b8f9c92a215c4b25fce1a1033ec8",
+  "counterbalancing": {
+    "section_orders": ["single,multi", "multi,single"],
+    "assignment": "uniform random"
+  },
+  "sections": {
+    "single": {
+      "stimulus_root": "static/videos_single",
+      "adaptive_trials": 57,
+      "catch_trials": 3,
+      "total_trials": 60,
+      "response_options": ["Lighter", "Heavier"]
+    },
+    "multi": {
+      "stimulus_root": "static/videos_multi",
+      "adaptive_trials": 57,
+      "catch_trials": 3,
+      "total_trials": 60,
+      "response_options": ["Lighter", "Heavier"]
+    }
+  },
+  "reference_mass": 8.0,
+  "candidate_masses": [2.0, 2.3142, 2.6778, 3.0985, 3.5853, 4.1486, 4.8004, 5.5546, 6.4272, 7.437, 8.0, 8.6055, 9.9575, 11.521, 13.332, 15.426, 17.85, 20.655, 23.9, 27.655, 32.0],
+  "quest": {
+    "function": "norm_cdf_2",
+    "sd_domain": [0.01, 2.0, 30],
+    "lapse_domain": [0.0, 0.2, 10],
+    "selection": "min_entropy",
+    "estimate": "mean"
+  },
+  "quality_rule": "excluded when fewer than 5 of 6 main catch trials are correct",
+  "tutorial_media": [
+    "static/tutorial/images/tutorial.gif",
+    "static/tutorial/images/tutorial-multi.gif"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "seed": 42,
+  "draws": 15000,
+  "tune": 4000,
+  "chains": 4,
+  "cores": 4,
+  "target_accept": 0.99,
+  "efficient": true,
+  "init": "adapt_diag",
+  "python": "3.12.14",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.12.0",
+    "pymc": "5.12.0",
+    "pytensor": "2.19.0",
+    "arviz": "0.17.1",
+    "xarray": "2026.9.0"
+  },
+  "thread_limits": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "PYTENSOR_FLAGS": null
+  },
+  "diagnostics": {
+    "divergences": 0,
+    "max_rhat": 1.0005359789068065,
+    "min_ess_bulk": 6399.584700698213,
+    "min_ess_tail": 10684.936811693504,
+    "passed": true
+  },
+  "analysis": "Experiment 1; canonical 100 participants, 11400 noncatch responses",
+  "source_run": "full-20261007T105410.440524Z",
+  "posterior_sha256": "be43664ff197255fda29ef5073b4f6e32600507a9811ff6e5e82fb3c60096b26",
+  "data_sha256": "a7725b3d032fa4ffcadc619866ab91951024684e8e62173daa37b14def9428de",
+  "figure_seed": 42,
+  "posterior_predictive_seed": 42,
+  "selection": "data/experiment1/participants.csv",
+  "glmm": {
+    "source_run": "glmm-20261019T190624.780850Z",
+    "seed": 42,
+    "R": "4.6.1",
+    "lme4": "2.0.6",
+    "Matrix": "1.7.5",
+    "jsonlite": "2.0.0"
+  },
+  "saved_outputs_sha256": {
+    "summary.csv": "50a9b89f3cc6cf43f1d88b8eef0c3092afc8a8eadb676658db2af942262e0dcf",
+    "participant_estimates.csv": "2686eb43845b38c45c3aec8eb5675c0aadf49d76ffe7bba2ff45e9b2b7f34cb2",
+    "curves.pdf": "e1b79dd820c5b570bb757552b2d0b4ced571a1bff7e22cb95255f62a59d45afc"
+  },
+  "source_records_sha256": "9eebbf15489adc35d1346b1c6ef2fcd54b2244a6de56cf1d0c3d9a8b3a4e73d6",
+  "selection_mapping_sha256": "09335eac11f15b20f638de01b225508e1e21cd0e9ba88f453a586208512fb10c",
+  "figure_environment": {
+    "paper_matplotlib": "3.10.8",
+    "reproduction_matplotlib": "3.9.0",
+    "reproduction_pixels_match_paper_png": true
+  },
+  "reproduction": {
+    "summary_matches_paper": true,
+    "participant_csv_matches_paper": true,
+    "repeat_output_hashes_identical": true,
+    "glmm_saved_estimates_verified": true,
+    "standalone_package": true,
+    "glmm_rerun_exact": true,
+    "fresh_install_exact_summary": true
+  },
+  "code_sha256": {
+    "model.py": "264f12c78ce09c2c90e8fb69d8fcae52c7da14b5a7e79b483ac0184dab4f01b4",
+    "plot.py": "5856404f00c27c07cad0f6bfe4f34b9dda7003b8719aada59e378a50c0875c35",
+    "run.py": "654f337c84abdd443444a4798f9309b89010b0aa397271f532e40f8f48fa8c34",
+    "summarize.py": "f85e93efa65c869684bec2b3ea23b89be5f6ffdcc6452e937d062e0afa0a75b1",
+    "glmm.R": "e204c7ead244a264be6226b6e4df2fb5eaa6bbf236e28e33a9866ffa79ef30e0"
+  },
+  "requirements_sha256": "f4d8e1b49598e859ddc4e9ca64d43e872ec1b8481436953a506afec516b000e7"
+}
